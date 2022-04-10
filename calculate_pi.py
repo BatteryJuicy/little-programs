@@ -1,3 +1,12 @@
+"""calculates pi by generating random coordinates in a square
+and checks if these points are in the inscribed circle. 
+As the number of points increases, it approaches the area of the square,
+and the points inside the circle, approach the area of the circle, so,
+the ration of the areas of the circle and the square is pi/4, therefore
+the ratio of the respective collections of points approaches pi/4. 
+In other words, if the variable accuracy is the dx of 
+the points(since randint is an integer) then the limit of points_in_circle/points 
+as accuracy tends to infinity, is pi/4."""
 from random import randint as ri
 
 accuracy = 1000
